@@ -1,9 +1,15 @@
+@font-face {
+  font-family: noto;
+  src: url("./assets/Fonts/Serid-noto.ttf");
+}
+
 body {
   justify-content: center;
   margin: 0;
 }
 .content-container {
   background-color: #7e7458;
+  background-image: url("./assets/images/texture.webp");
   display: flex;
   justify-content: center;
 }
@@ -14,12 +20,14 @@ body {
   align-items: center;
   height: 100vh;
   background-color: #faedcd;
-  box-shadow: 10px 0 100px rgba(0, 0, 0, 0.3), -10px 0 100px rgba(0, 0, 0, 0.3);
+  background-size: cover;
+  box-shadow: 10px 0 100px rgba(0, 0, 0, 0.8), -10px 0 100px rgba(0, 0, 0, 0.8);
 }
 .welcome {
-  font-size: 4rem;
-  margin-bottom: 0;
+  font-size: 6rem;
+  margin: 0;
   white-space: nowrap;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .t-feature-container {
   display: flex;
@@ -36,6 +44,7 @@ hr {
 
 .welcome-body {
   color: #566573;
+  font-family: noto;
   margin: 0;
 }
 
@@ -50,11 +59,11 @@ hr {
   min-width: 50px;
 }
 
-@media (max-width: 1075px) {
+@media (max-width: 1200px) {
   .top-feature {
     flex-direction: column;
   }
   .t-feature-gap {
-    flex: 0 1 50px;
+    flex: 0 1 100px;
   }
 }
