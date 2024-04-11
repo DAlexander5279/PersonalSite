@@ -5,29 +5,39 @@
 
 body {
   justify-content: center;
+  /*
+  background-image: url("./assets/images/istockphoto-1186232338-612x612.jpg");
+  */
+  background-color: #282105;
+  background-size: cover;
   margin: 0;
+  display: flex;
 }
 .content-container {
-  background-color: #7e7458;
-  background-image: url("./assets/images/texture.webp");
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 10px 0 100px rgba(0, 0, 0, 0.8), -10px 0 100px rgba(0, 0, 0, 0.8);
+  background-color: #faedcd;
+  width: 75%;
 }
 .top-feature {
   display: flex;
-  width: 95%;
+  width: 100%;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 95vh;
   background-color: #faedcd;
   background-size: cover;
-  box-shadow: 10px 0 100px rgba(0, 0, 0, 0.8), -10px 0 100px rgba(0, 0, 0, 0.8);
 }
 .welcome {
   font-size: 6rem;
   margin: 0;
   white-space: nowrap;
+}
+.main-text {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #282105;
 }
 .t-feature-container {
   display: flex;
@@ -37,13 +47,56 @@ body {
   justify-content: center;
 }
 
+.skills-feature {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  gap: 5rem;
+}
+.skills-head {
+  margin: 0;
+  font-size: 8rem;
+  font-weight: 1;
+}
+.skills-container {
+  margin-left: 3rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+}
+.skill-item {
+  padding: 0 3rem;
+  gap: 3rem;
+}
+.skill-title {
+  font-size: 3.5rem;
+  font-weight: var(--light);
+}
+
+.skill-list {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.skill-list-item {
+  background-color: #93886b;
+  color: #282105;
+
+  padding: 1rem 2.5rem;
+  font-size: 2.5rem;
+  border-radius: 0.2rem;
+  font-family: noto;
+}
 hr {
   width: 100%;
   border: solid #1b2631 1px;
 }
 
 .welcome-body {
-  color: #566573;
+  color: #756b4f;
   font-family: noto;
   margin: 0;
 }
@@ -51,6 +104,7 @@ hr {
 .profile_pic {
   border-radius: 50%;
   height: 500px;
+  filter: drop-shadow(30px 10px #282105);
 }
 
 .t-feature-gap {
