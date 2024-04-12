@@ -2,7 +2,9 @@
   font-family: noto;
   src: url("./assets/Fonts/Serid-noto.ttf");
 }
-
+h2 {
+  margin-bottom: 0;
+}
 body {
   justify-content: center;
   /*
@@ -77,7 +79,7 @@ body {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 1vw;
 }
 .skill-list-item {
   background-color: #35009d;
@@ -117,6 +119,46 @@ hr {
     flex-direction: column;
   }
   .t-feature-gap {
-    flex: 0 1 2vw;
+    flex: 0 1 3vw;
+  }
+
+  @media (max-width: 800px) {
+    .t-feature-gap {
+      flex: 0 1 5vh;
+    }
+
+    .profile_pic {
+      width: 60%;
+      filter: drop-shadow(3vw 3vw #35009d);
+    }
+
+    .welcome {
+      font-size: 4vh;
+    }
+
+    .welcome-body {
+      font-size: 3vh;
+    }
+    .skills-feature {
+      gap: 2vh;
+    }
+
+    .skill-title {
+      font-size: 6vw;
+    }
+    .skills-head {
+      font-size: 7vw;
+    }
+    .skill-item {
+      padding-left: 0;
+    }
+    .skill-list-item {
+      font-size: 5vw;
+      padding: 1vh 3vw;
+    }
+    h3 {
+      margin: 0;
+      margin-bottom: 1vh;
+    }
   }
 }
