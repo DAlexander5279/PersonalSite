@@ -82,8 +82,7 @@ body {
 .skill-list-item {
   background-color: #35009d;
   color: #ffff;
-
-  padding: 1vh 0.5vw;
+  padding: 1vh 1vw;
   font-size: 1.5vw;
   border-radius: 0.2rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
